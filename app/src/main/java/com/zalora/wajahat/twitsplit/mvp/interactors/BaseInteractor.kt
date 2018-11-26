@@ -1,5 +1,6 @@
 package com.zalora.wajahat.twitsplit.mvp.interactors
 
+import com.zalora.wajahat.twitsplit.Constants
 import com.zalora.wajahat.twitsplit.TwitSplitApp
 import com.zalora.wajahat.twitsplit.data.SharedPrefs
 import com.zalora.wajahat.twitsplit.models.Profile
@@ -21,8 +22,7 @@ open class BaseInteractor {
     }
 
     fun getProfileInfo(): Profile {
-//        return Profile(prefs.getString(Constants.FULL_NAME),
-//                prefs.getString(Constants.USERNAME))
-        return Profile("Wajahat Jawaid", "wajahat")
+        return Profile(prefs.getString(Constants.FULL_NAME),
+                prefs.getString(Constants.USERNAME))
     }
 }

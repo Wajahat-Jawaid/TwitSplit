@@ -5,6 +5,13 @@
     <dimen name="toolbar_img_m_e">20dp</dimen>
     <dimen name="fab_m">20dp</dimen>
     
+    <!-- activity_login -->
+    <dimen name="login_p">30dp</dimen>
+    <dimen name="login_logo_m_t">100dp</dimen>
+    <dimen name="login_full_name_m_t">30dp</dimen>
+    <dimen name="login_username_m_t">20dp</dimen>
+    <dimen name="login_continue_m_t">20dp</dimen>
+
     <!-- activity_send -->
     <dimen name="send_parent_p_t_e">10dp</dimen>
     <dimen name="send_parent_p_s">14dp</dimen>

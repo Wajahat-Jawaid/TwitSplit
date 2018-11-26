@@ -12,7 +12,7 @@ class TweetsAdapter(private var mTweets: ArrayList<MainInterfaceTweets>)
     : RecyclerView.Adapter<TweetsAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, p1: Int): ViewHolder {
-        // Inflating view with the extension function of kotlin
+        // Inflating impl with the extension function of kotlin
         return ViewHolder(parent.inflate(R.layout.row_item_tweet))
     }
 
@@ -26,7 +26,7 @@ class TweetsAdapter(private var mTweets: ArrayList<MainInterfaceTweets>)
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        /** Bind view with the tweet
+        /** Bind impl with the tweet
          * @param tweet Tweet message model
          * */
         fun bind(tweet: MainInterfaceTweets) {

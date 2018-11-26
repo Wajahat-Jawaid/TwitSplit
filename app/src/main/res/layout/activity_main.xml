@@ -51,7 +51,7 @@
         android:background="@color/light_gray"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
-    <!-- This parent contains the view to be hidden mostly including
+    <!-- This parent contains the impl to be hidden mostly including
      progressBar and the error message -->
     <RelativeLayout
         android:id="@+id/rl_hide"
@@ -83,5 +83,6 @@
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_m"
         app:backgroundTint="@color/theme_blue"
+        android:src="@mipmap/ic_fab_tweet"
         app:layout_anchorGravity="bottom|end" />
 </android.support.design.widget.CoordinatorLayout>

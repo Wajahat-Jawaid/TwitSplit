@@ -1,6 +1,7 @@
 package com.zalora.wajahat.twitsplit.mvp.interactors
 
 import android.support.annotation.StringRes
+import android.util.Log
 import com.google.firebase.database.ChildEventListener
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -49,6 +50,7 @@ class MainInteractor : BaseInteractor() {
     }
 
     fun fetchUserTweets(listener: OnTweetsFetchedListener) {
+        Log.d("MainInteractor", "username: $username")
         TwitSplitApp.instance
                 ?.getFirebaseDatabase(username)
                 ?.addChildEventListener(object : ChildEventListener {

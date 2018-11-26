@@ -72,6 +72,11 @@ open class BaseActivity : AppCompatActivity() {
         startActivity(i)
     }
 
+    fun switchActivity(activity: Class<out BaseActivity>) {
+        val i = Intent(context, activity)
+        startActivity(i)
+    }
+
     override fun onDestroy() {
         if (!compositeDisposable.isDisposed) compositeDisposable.dispose()
         baseInteractor.onDestroy()

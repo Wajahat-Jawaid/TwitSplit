@@ -6,7 +6,7 @@ import android.view.KeyEvent
 import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
 
-/** This view is currently used in the @link SendActivity.
+/** This impl is currently used in the @link SendActivity.
  * The EditText interferes the BACK key event and overrides the Android default behavior
  * to close the EditText only instead of closing EditText along with finishing off the activity*/
 class AutoBackEditText(context: Context?, attributes: AttributeSet)

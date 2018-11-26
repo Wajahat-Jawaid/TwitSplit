@@ -11,7 +11,7 @@ import com.zalora.wajahat.twitsplit.mvp.impl.SendImpl
 import com.zalora.wajahat.twitsplit.mvp.interactors.SendInteractor
 import com.zalora.wajahat.twitsplit.mvp.presenters.SendPresenter
 import io.reactivex.disposables.CompositeDisposable
-import kotlinx.android.synthetic.main.send_activity.*
+import kotlinx.android.synthetic.main.activity_send.*
 
 class SendActivity : BaseActivity(), SendImpl {
 
@@ -21,7 +21,7 @@ class SendActivity : BaseActivity(), SendImpl {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.send_activity)
+        setContentView(R.layout.activity_send)
         if (!TextUtils.isEmpty(savedInstanceState?.getString(Constants.TWEET)))
             et_tweet.setText(savedInstanceState?.getString(Constants.TWEET))
         setListeners()
@@ -48,7 +48,6 @@ class SendActivity : BaseActivity(), SendImpl {
             }
         })
         subscriptions.add(RxView.clicks(b_tweet).subscribe {
-            //            if (!TextUtils.isEmpty(utils.EToS(et_tweet)))
             if (hasInternet()) {
                 presenter.sendTweet()
             } else {
