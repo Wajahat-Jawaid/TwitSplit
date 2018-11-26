@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/send_parent_p_s"
+    android:paddingTop="@dimen/send_parent_p_t_e"
+    android:paddingEnd="@dimen/send_parent_p_t_e">
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/ib_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/ib_cross_m_s"
+        android:background="@color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_clear_theme_blue_34dp" />
+
+    <TextView
+        android:id="@+id/b_tweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_send_btn"
+        android:fontFamily="roboto_bold"
+        android:text="@string/tweet"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tweet_section_m_t"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/b_tweet">
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="@dimen/tweet_section_avatar_w_h"
+            android:layout_height="@dimen/tweet_section_avatar_w_h"
+            android:layout_marginEnd="@dimen/tweet_section_avatar_m_e"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_user" />
+
+        <com.zalora.wajahat.twitsplit.mvp.custom.AutoBackEditText
+            android:id="@+id/et_tweet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@color/transparent"
+            android:hint="@string/whats_happening"
+            android:textColorHint="@color/text_light_x" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- activity_main -->
+    <dimen name="toolbar_img_w_h">30dp</dimen>
+    <dimen name="toolbar_img_m_e">15dp</dimen>
+    <dimen name="fab_m">15dp</dimen>
+
+    <!-- activity_send -->
+    <dimen name="send_parent_p_t_e">8dp</dimen>
+    <dimen name="send_parent_p_s">11dp</dimen>
+    <dimen name="ib_cross_m_s">3dp</dimen>
+    <dimen name="tweet_section_m_t">14dp</dimen>
+    <dimen name="tweet_section_avatar_w_h">32dp</dimen>
+    <dimen name="tweet_section_avatar_m_e">6dp</dimen>
+
+    <!-- row_item_tweet -->
+    <dimen name="ri_tweet_parent_p">6dp</dimen>
+    <dimen name="ri_tweet_fullname_m_s">6dp</dimen>
+    <dimen name="ri_tweet_username_m_s">6dp</dimen>
+    <dimen name="ri_tweet_duration_m_s">6dp</dimen>
+    <dimen name="ri_tweet_tweet_m_s">6dp</dimen>
+    <dimen name="ri_tweet_tweet_m_t">3dp</dimen>
+
+    <!-- bg_send_btn -->
+    <dimen name="bg_send_radius">13dp</dimen>
+    <dimen name="bg_send_p_t_b">6dp</dimen>
+    <dimen name="bg_send_p_e_s">13dp</dimen>
+</resources>

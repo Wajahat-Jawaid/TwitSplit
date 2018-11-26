@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="@color/theme_light_blue" />
+
+    <corners android:radius="@dimen/bg_send_radius" />
+
+    <padding
+        android:bottom="@dimen/bg_send_p_t_b"
+        android:left="@dimen/bg_send_p_e_s"
+        android:right="@dimen/bg_send_p_e_s"
+        android:top="@dimen/bg_send_p_t_b" />
+</shape>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">TwitSplit</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="erase_this_word">Erase this word</string>
+    <string name="home">Home</string>
+    <string name="no_internet">Please connect to the internet</string>
+    <string name="profile_img">Profile Image</string>
+    <string name="tweet">Tweet</string>
+    <string name="whats_happening">What\'s happening?</string>
+
+    <string name="max_tweet_limit">Max characters can be 2000</string>
+    <string name="no_tweets">No Tweets present</string>
+    <string name="req_timeout">Request time out.</string>
+    <string name="tweet_empty">Tweet is empty</string>
+    <string name="tweet_in_progress">Tweet in progress</string>
+    <string name="tweet_success">Tweet posted successfully</string>
+    <string name="word_limit_exceeded">Words with more than 50 characters are not allowed</string>
+</resources>
