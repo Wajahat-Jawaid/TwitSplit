@@ -39,12 +39,11 @@ class SendInteractor : BaseInteractor() {
         if (chunks != null && chunks.size > 0) {
             val databaseReference = TwitSplitApp.instance?.getFirebaseDatabase(username)
             val map = HashMap<String, String>()
-            var anyFailure = false
             val count = chunks.size
             for (i in 0 until count) {
                 map[Constants.TIMESTAMP] = System.currentTimeMillis().toString()
                 map[Constants.TWEET] = chunks[i]
-                val task = databaseReference?.push()?.setValue(map)
+                databaseReference?.push()?.setValue(map)
             }
             listener.onTweetSuccess(count)
         }
